@@ -28,3 +28,23 @@ document.addEventListener("DOMContentLoaded", function() {
         generateRecommendations();
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const newsDiv = document.getElementById("news");
+
+    // Function to add news manually
+    function addNews(title, content, isPositive) {
+        const div = document.createElement("div");
+        div.className = "news-item";
+        div.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
+        if (isPositive) {
+            div.classList.add("positive");
+        } else {
+            div.classList.add("negative");
+        }
+        newsDiv.appendChild(div);
+    }
+
+    // Add news manually (Example)
+    addNews("Tech Titan Meta Shatters Earnings Records", "Global Recession Fears Intensify as Key Economic Indicators Signal Downturn", true);
+    addNews("Federal Reserve Announces Interest Rate Cut to Stimulate Slowing Economy", "Retail Giant Walmart Disappoints with Weak Sales Figures, Stock Price Tumbles", false);
+});
