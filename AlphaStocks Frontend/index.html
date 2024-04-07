@@ -41,7 +41,7 @@
       <div class="logo">
         <h1><a href="index.html"><span style="color: rgb(10, 111, 245);">Alpha</span>Stocks</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <!---<a href="index.html"><img src="assets/img/" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
@@ -49,7 +49,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="login.html">Login</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Register</a></li>
+          <li><a class="nav-link scrollto " href="register.html">Register</a></li>
      
         
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -354,5 +354,23 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+<script>
+  window.addEventListener('mouseover', initLandbot, { once: true });
+  window.addEventListener('touchstart', initLandbot, { once: true });
+  var myLandbot;
+  function initLandbot() {
+    if (!myLandbot) {
+      var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+      s.addEventListener('load', function() {
+        var myLandbot = new Landbot.Livechat({
+          configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2179739-VSQ50ZO38J5WUMFR/index.json',
+        });
+      });
+      s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  }
+  </script>
 
 </html>

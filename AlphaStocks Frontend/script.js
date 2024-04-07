@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
         // Here you can generate recommendations based on user input
         // For demonstration, let's generate some dummy recommendations
         const dummyRecommendations = [
-            { symbol: "AAPL", price: 150.25, recommendation: "Buy" },
-            { symbol: "GOOGL", price: 2800.50, recommendation: "Hold" },
-            { symbol: "MSFT", price: 300.75, recommendation: "Sell" },
-            { symbol: "AMZN", price: 3400.20, recommendation: "Buy" },
-            { symbol: "TSLA", price: 900.80, recommendation: "Hold" }
+            { symbol: "AXISBANK", price: 150.25, recommendation: "Buy 30 SHARES" },
+            { symbol: "WIPRO", price: 2800.50, recommendation: "Hold" },
+            { symbol: "ZEEMD", price: 300.75, recommendation: "Sell 15 SHARES" },
+            { symbol: "TECHM", price: 3400.20, recommendation: "Buy 40 SHARES" },
+            { symbol: "FORTISHEALTHCARE", price: 900.80, recommendation: "Hold" }
         ];
 
         dummyRecommendations.forEach(recommendation => {

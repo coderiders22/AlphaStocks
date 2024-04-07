@@ -221,7 +221,7 @@
                 font-size: 18px;
                 border-radius: 25px;
                 border: none;
-                background-color: #474747; /* Dark input background color */
+                background-color: #222121; /* Dark input background color */
                 color: #fff; /* Light text color */
                 outline: none;
             }
@@ -253,10 +253,10 @@
             }
             
             #recommendations {
-                border: 2px solid #fff; /* Light border color */
+                border: 2px solid #ffffff; /* Light border color */
                 border-radius: 15px;
                 padding: 30px;
-                background-color: #474747; /* Dark background color */
+                background-color: #ffffff; /* Dark background color */
             }
             
             #recommendations > div {
@@ -449,5 +449,22 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
+<script>
+  window.addEventListener('mouseover', initLandbot, { once: true });
+  window.addEventListener('touchstart', initLandbot, { once: true });
+  var myLandbot;
+  function initLandbot() {
+    if (!myLandbot) {
+      var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+      s.addEventListener('load', function() {
+        var myLandbot = new Landbot.Livechat({
+          configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2179739-VSQ50ZO38J5WUMFR/index.json',
+        });
+      });
+      s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  }
+  </script>
 </html>
