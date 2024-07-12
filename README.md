@@ -29,7 +29,7 @@ We understand that navigating the stock market can be daunting, especially for b
 - **User-Friendly**: Our platform offers intuitive portfolio guidance, catering to both novice and experienced investors.
 
 ## Tech Stack:
-- **Models**: LSTM for stock prediction, integrated with Python libraries like TensorFlow.
+- **Models**: LSTM for stock prediction, integrated with Python libraries like TensorFlow, Keras.
 - **Sentiment Analysis**: Natural Language Processing (NLP) techniques using Python libraries like distilroberta-finetuned-financial-news-sentiment-analysis model.
 - **Development**: Python for backend development, HTML/CSS/JavaScript for frontend, and Flask for web framework.
 
