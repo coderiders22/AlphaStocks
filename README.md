@@ -18,7 +18,7 @@ Offering personalized portfolio suggestions based on sentiment analysis and stoc
 Our project distinguishes itself by employing LSTM models, known for their accuracy in stock prediction. These models analyze historical data and market trends to forecast future stock prices.
 
 ### 2. Sentiment Analysis of News:
-In addition to traditional stock prediction methods, we incorporate sentiment analysis of news articles. By assessing the sentiment of current news, we provide insights into how public sentiment influences stock prices.
+In addition to traditional stock prediction methods, we incorporate sentiment analysis of financial news articles. By assessing the sentiment of current news, we provide insights into how public sentiment influences stock prices.
 
 ### 3. Portfolio Guidance for Beginners:
 We understand that navigating the stock market can be daunting, especially for beginners. Hence, we offer a feature that analyzes stock progress and suggests BUY/SELL options, simplifying portfolio management.
