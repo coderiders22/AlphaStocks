@@ -1,5 +1,8 @@
 # Stock Prediction with Sentiment Analysis - README
 
+## Deployed Website:
+https://alpha-stocks.netlify.app/
+
 ## Project Overview:
 Our project focuses on providing accurate stock predictions by integrating sentiment analysis. We offer a comprehensive solution through three primary components:
 
